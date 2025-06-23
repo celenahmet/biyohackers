@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "biohackers"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "biohackers-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
